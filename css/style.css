@@ -90,12 +90,21 @@ h2 {
 
 }
 
-h4,
-h5,
-h6 {
-
+h3, h4, h5 {
+  margin-left: 150px;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+  font-size: 40px;
+  text-align: left;
 }
 
-p {
-
+ P {
+  margin-left: 300px;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+  font-size: 20px;
+  text-align: ;
+  margin-top: -150px;
 }
