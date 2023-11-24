@@ -69,7 +69,7 @@ h1 {
   margin: auto;
 }
 
-img {
+.profile-pic {
   height: 12%;
   width: 12%;
   border-radius: 60%;
@@ -91,20 +91,156 @@ h2 {
 }
 
 h3, h4, h5 {
-  margin-left: 150px;
+  margin-left: 94px;
   padding: 0;
   font-family: 'Times New Roman', Times, serif;
   color: #333;
   font-size: 40px;
   text-align: left;
+  border-right-style: solid;
+  border-width: 2px;
+  width: 178px;
+  height: 172px;
+  padding: 29px;
 }
-
- P {
-  margin-left: 300px;
+P {
+  margin-left: 316px;
   padding: 0;
   font-family: 'Times New Roman', Times, serif;
   color: #333;
   font-size: 20px;
-  text-align: ;
-  margin-top: -150px;
+  margin-top: -212px;
+}
+
+#
+#
+#
+
+#heroGrid {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas:
+  "featuredProduct secondaryProduct"
+  "featuredProduct CTA";
+}
+
+#background1 {
+  grid-area: background1;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#background2 {
+  grid-area: secondaryProduct;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#background2 {
+  grid-area: background2;
+  background-image: url("../images/02-portfolio-3.jpg");
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+#headline {
+  background-color: rgba(255,255,255,0.8);
+  border-bottom: 10px solid #FF6200;
+  position: absolute;
+  right: -50px;
+  top: 100px;
+  padding: 25px;
+  max-width: 550px;
+  z-index: 100;
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+/* Category Grid CSS */
+.subHeading {
+text-align: center;
+border-bottom: 2px solid black;
+width: 300px;
+margin: 50px auto;
+}
+
+#categoryGrid {
+  margin: 40px 331px;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr; grid-template-areas: "surf-report surf-report"
+  "led-wall calculator"
+  "pastel-puzzles run-buddy";
+}
+
+#pastel-puzzles {
+grid-area: pastel-puzzles;
+background-image: url('../images/02-portfolio-3.jpg');
+}
+
+#run-buddy {
+grid-area: run-buddy;
+background-image: url('../images/02-run-buddy.jpg');
+}
+
+#calculator {
+grid-area: calculator;
+background-image: url('../images/02-portfolio-2.jpg');
+}
+
+#led-wall {
+grid-area: led-wall;
+background-image: url('../images/02-portfolio-1.jpg');
+}
+
+#surf-report {
+grid-area: surf-report;
+background-image: url('../images/02-portfolio-4.jpg');
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: rgba (0,0, 0, 0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #FF6200;
+}
+
+
+.icons {
+  display: flex;
+  width: 25%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+
+.icons img {
+  margin: 15px;
+  cursor: pointer;
 }
