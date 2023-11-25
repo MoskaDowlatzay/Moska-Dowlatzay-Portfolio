@@ -6,13 +6,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'arial';
   line-height: 1.5;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .topnav {
@@ -82,7 +77,7 @@ h2 {
   text-align: center;
   color: #a8dcdd;
   font-size: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'arial';
   float: inline-end;
   padding: 8px;
   background-color: #a8dcdd;
@@ -102,145 +97,88 @@ h3, h4, h5 {
   width: 178px;
   height: 172px;
   padding: 29px;
+  flex-direction: row;
 }
 P {
-  margin-left: 316px;
+  margin: 2em;
   padding: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'arial';
   color: #333;
   font-size: 20px;
-  margin-top: -212px;
 }
 
-#
-#
-#
-
-#heroGrid {
-  margin: 0px 5%;
-  display: grid;
-  min-height: 500px;
-  height: 70vh;
-  grid-template-rows: 75% 25%;
-  grid-template-columns: 75% 25%;
-  grid-template-areas:
-  "featuredProduct secondaryProduct"
-  "featuredProduct CTA";
-}
-
-#background1 {
-  grid-area: background1;
-  background-image: url("../images/02-portfolio-1.jpg");
-}
-
-#background2 {
-  grid-area: secondaryProduct;
-  background-image: url("../images/02-portfolio-2.jpg");
-}
-
-#background2 {
-  grid-area: background2;
-  background-image: url("../images/02-portfolio-3.jpg");
-  justify-content: space-around;
-  cursor: pointer;
-}
-
-#headline {
-  background-color: rgba(255,255,255,0.8);
-  border-bottom: 10px solid #FF6200;
-  position: absolute;
-  right: -50px;
-  top: 100px;
-  padding: 25px;
-  max-width: 550px;
-  z-index: 100;
-}
-
-.heroGridArea {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
-  display: flex;
-  position: relative;
-}
-
-/* Category Grid CSS */
-.subHeading {
-text-align: center;
-border-bottom: 2px solid black;
-width: 300px;
-margin: 50px auto;
-}
-
-#categoryGrid {
-  margin: 40px 331px;
+.categoryGrid {
+  margin: 2em;
   display: grid;
   grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 1fr 1fr; grid-template-areas: "surf-report surf-report"
+  grid-template-columns: 1fr 1fr; 
+  grid-template-areas:
+  "surf-report surf-report"
   "led-wall calculator"
   "pastel-puzzles run-buddy";
 }
 
-#pastel-puzzles {
+.card{
+  margin: 5px;
+  border:#a8dcdd solid 5px;
+}
+
+.pastel-puzzles {
 grid-area: pastel-puzzles;
-background-image: url('../images/02-portfolio-3.jpg');
+position: relative;
 }
 
-#run-buddy {
+.run-buddy {
 grid-area: run-buddy;
-background-image: url('../images/02-run-buddy.jpg');
+position: relative;
 }
 
-#calculator {
+.calculator {
 grid-area: calculator;
-background-image: url('../images/02-portfolio-2.jpg');
+position: relative;
 }
 
-#led-wall {
+.led-wall {
 grid-area: led-wall;
-background-image: url('../images/02-portfolio-1.jpg');
+position: relative;
 }
 
-#surf-report {
+.surf-report {
 grid-area: surf-report;
-background-image: url('../images/02-portfolio-4.jpg');
+position: relative;
 }
 
-.categoryGridArea {
+.tiles {
   background-position: center;
-  background-size: cover;
+  object-fit: cover;
   background-repeat: no-repeat;
-  margin: 5px;
+  margin: 0px;
   cursor: pointer;
-  display: grid;
-  align-content: end;
+  height: 100%;
+  width: 100%;
 }
-
-.heading {
-  background-color: rgba (0,0, 0, 0.7);
-  padding: 15px;
-  height: 25px;
-  color: white;
-  font-size: 18px;
-  border-bottom: 5px solid #FF6200;
-}
-
-
-.icons {
+.page-section {
   display: flex;
-  width: 25%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 5px;
-  cursor: pointer;
-  display: grid;
-  align-content: end;
+}
+.heading {
+  background-color: #a8dcdd;
+  height: 25px;
+  color: black;
+  font-size: 18px;
+  border: 5px solid #a8dcdd;
+  position: absolute;
+  top: 11.5em;
+  padding: 25px;
 }
 
+.contact-me{
+  display: flex;
+  padding: 10% 0 0 30px;
+  list-style-type: none;
+}
 
-.icons img {
-  margin: 15px;
-  cursor: pointer;
+.contact-list{
+  margin-right: 55px;
+  font-size: 20px;
+  text-decoration: underline 3px solid #333;
 }
