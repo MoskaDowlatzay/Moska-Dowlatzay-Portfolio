@@ -93,7 +93,7 @@ h3, h4, h5 {
   font-size: 40px;
   text-align: left;
   border-right-style: solid;
-  border-width: 2px;
+  border-width: 4px;
   width: 178px;
   height: 172px;
   padding: 29px;
@@ -173,7 +173,7 @@ position: relative;
 
 .contact-me{
   display: flex;
-  padding: 10% 0 0 30px;
+  padding: 10% 0 0 40px;
   list-style-type: none;
 }
 
