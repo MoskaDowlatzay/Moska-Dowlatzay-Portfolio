@@ -12,6 +12,7 @@ Welcome to my homework for unit 2, creating a portfolio. My portfolio is a recre
 
 Images taken from class-repo/02-css-module/04-responsive-portfolio-lesson
 My portfolio image credit goes to https://i.pinimg.com/550x/8c/c6/57/8cc6579be0dc7cfb92108dad5b504ee7.jpg
+calculator card credit goes to https://www.calculatorsoup.com/calculators/math/basic.php
 
 ##  Authors
 [MoskaDowlatzay] (https://github.com/MoskaDowlatzay)
